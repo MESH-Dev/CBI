@@ -410,33 +410,6 @@ footer p {
   margin-top: 1.375em;
 }
 
-/* line 32, sass/utilities/_mixins.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 33, sass/utilities/_mixins.scss */
-.content-fullscreen {
-  width: 100%;
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -50px;
-}
-
-/* line 40, sass/utilities/_mixins.scss */
-.content-fullscreen:after {
-  content: "";
-  display: block;
-}
-
-/* line 44, sass/utilities/_mixins.scss */
-#footer-fullscreen, .content-fullscreen:after {
-  clear: both;
-  position: relative;
-  height: 50px;
-}
-
 /* line 3, sass/layout/_footer.scss */
 .site-footer {
   background-color: #d3d3d3;
@@ -622,22 +595,41 @@ html, body {
   text-align: center;
   display: block;
   width: 100%;
+  margin-bottom: 150px;
 }
-/* line 10, sass/modules/_modules.scss */
+/* line 11, sass/modules/_modules.scss */
 .callout h1 {
   color: white;
 }
 
-/* line 15, sass/modules/_modules.scss */
+/* line 16, sass/modules/_modules.scss */
 .callout-button {
   border: 2px solid white;
   border-radius: 10px;
   text-align: center;
   color: white;
 }
-/* line 21, sass/modules/_modules.scss */
+/* line 22, sass/modules/_modules.scss */
 .callout-button h3 {
   line-height: 0em;
+}
+
+/* line 28, sass/modules/_modules.scss */
+.types ul {
+  display: block;
+}
+/* line 30, sass/modules/_modules.scss */
+.types ul li {
+  display: inline;
+  padding: 5px 10px;
+  margin: 15px;
+  float: left;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+/* line 38, sass/modules/_modules.scss */
+.types ul li:hover {
+  border: 2px solid black;
 }
 
 /* BASE GRID

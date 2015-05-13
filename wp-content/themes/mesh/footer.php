@@ -28,7 +28,7 @@
 	<?php } ?>
 
 	<div class="container">
-		<div class="row">
+
 			<div class="eight columns">
 				<div class="icons">
 					<div class="icon">
@@ -53,7 +53,7 @@
 					<span>Site by <a href="http://meshfresh.com" target="_blank">MESH</a></span>
 				</div>
 			</div><!-- End of Footer -->
-		</div>
+		
 	</div>
 
 </footer>

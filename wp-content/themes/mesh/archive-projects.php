@@ -7,13 +7,23 @@
       <div class="twelve columns">
         <h1>Our Work</h1>
         <hr class="black">
-        <?php
+        <div class="types">
+          <?php
 
-          $terms = get_terms("type");
+            $terms = get_terms("type");
 
-          print_r($terms);
+            if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
+              echo '<ul>';
 
-        ?>
+              foreach ( $terms as $term ) {
+               echo '<li>' . $term->name . '</li>';
+              }
+
+              echo '</ul>';
+            }
+
+          ?>
+        </div>
       </div>
     </div>
   </div>
