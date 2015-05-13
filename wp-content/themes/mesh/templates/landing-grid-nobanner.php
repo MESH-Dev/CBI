@@ -6,7 +6,7 @@ get_header(); ?>
 <main id="main" class="site-main" role="main">
 
   <div class="container">
-    <div class="row">
+
       <div class="twelve columns">
         <h1><?php the_title(); ?></h1>
         <hr class="black">
@@ -29,7 +29,7 @@ get_header(); ?>
           ?>
         </div>
       </div>
-    </div>
+
   </div>
 
 
