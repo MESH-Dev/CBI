@@ -19,9 +19,10 @@ get_header(); ?>
               echo '<ul>';
 
               foreach ( $terms as $term ) {
-               echo '<li>' . $term->name . '</li>';
+               echo '<li data-filter=".' . $term->slug . '">' . $term->name . '</li>';
               }
 
+              echo '<li data-filter="*" class="is-checked">All</li>';
               echo '</ul>';
             }
 
@@ -31,11 +32,9 @@ get_header(); ?>
     </div>
   </div>
 
-  <div class="container">
-    <div class="row">
 
 
-
+  <div class="container" id="container">
 
       <?php
 
@@ -45,83 +44,133 @@ get_header(); ?>
          	// loop through the rows of data
             while ( have_rows('content_blocks') ) : the_row(); ?>
 
-              <div class="four columns">
+              <?php
 
-                <?php
+                if (get_sub_field('call_to_action_link')) {
+                  $project = get_sub_field('call_to_action_link');
 
-                  // display a sub field value
-                  if (get_sub_field('content_block_type') == 'image-only') {
+                  $project_terms = wp_get_object_terms($project->ID, 'type');
 
-                    $image = get_sub_field('image');
-                    $thumb = $image['sizes']['grid-image'];
 
-                    ?>
 
-                    <img src="<?php echo $thumb; ?>" />
+                  $filter_terms = '';
 
-                    <?php
-
-                  }
-                  elseif (get_sub_field('content_block_type') == 'image-with-full-overlay') {
-
-                    $image = get_sub_field('image');
-                    $thumb = $image['sizes']['grid-image'];
-
-                    ?>
-
-                    <img src="<?php echo $thumb; ?>" />
-
-                    <h1><?php echo get_sub_field('title'); ?></h1>
-
-                    <h3><?php echo get_sub_field('tagline') ?></h3>
-
-                    <h3><?php echo get_sub_field('full_text'); ?></h3>
-
-                    <h5><a href="<?php echo get_sub_field('call_to_action_link'); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
-
-                    <?php
-
-                  }
-                  elseif (get_sub_field('content_block_type') == 'image-with-partial-overlay') {
-
-                    $image = get_sub_field('image');
-                    $thumb = $image['sizes']['grid-image'];
-
-                    ?>
-
-                    <img src="<?php echo $thumb; ?>" />
-
-                    <h5><a href="<?php echo get_sub_field('call_to_action_link'); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
-
-                    <?php
-
-                  }
-                  elseif (get_sub_field('content_block_type') == 'title-only') {
-
-                    ?>
-
-                    <h1><?php echo get_sub_field('title') ?></h1>
-
-                    <h5><a href="<?php echo get_sub_field('call_to_action_link'); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
-
-                    <?php
-                  }
-                  elseif (get_sub_field('content_block_type') == 'quote') {
-
-                    ?>
-
-                    <h4><?php the_sub_field('full_text'); ?></h4>
-
-                    <h5>&mdash; <?php the_sub_field('cite'); ?></h5>
-
-                    <?php
-
-                  }
-                  else {
-
+                  if ( ! empty( $project_terms ) ) {
+                  	if ( ! is_wp_error( $project_terms ) ) {
+                			foreach( $project_terms as $term ) {
+                			     $filter_terms .= " " . $term->slug;
+                			}
+                  	}
                   }
 
-                ?>
+                }
+
+              ?>
+
+              <div class="four columns item <?php echo $filter_terms; ?>">
+
+                <div class="content-block">
+
+                  <?php
+
+                    // display a sub field value
+                    if (get_sub_field('content_block_type') == 'image-only') {
+
+                      $image = get_sub_field('image');
+                      $thumb = $image['sizes']['grid-image'];
+
+                      ?>
+
+                      <img src="<?php echo $thumb; ?>" />
+
+                      <?php
+
+                    }
+                    elseif (get_sub_field('content_block_type') == 'image-with-full-overlay') {
+
+                      $image = get_sub_field('image');
+                      $thumb = $image['sizes']['grid-image'];
+
+                      ?>
+
+                      <img src="<?php echo $thumb; ?>" />
+
+                      <div class="image-full-overlay">
+
+                        <div class="text-1">
+                          <h1><?php echo get_sub_field('title'); ?></h1>
+                          <h3><?php echo get_sub_field('tagline') ?></h3>
+                        </div>
+
+                        <div class="text-2">
+                          <h3><?php echo get_sub_field('full_text'); ?></h3>
+                          <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+                        </div>
+
+                      </div>
+
+                      <?php
+
+                    }
+                    elseif (get_sub_field('content_block_type') == 'image-with-partial-overlay') {
+
+                      $image = get_sub_field('image');
+                      $thumb = $image['sizes']['grid-image'];
+
+                      ?>
+
+                      <img src="<?php echo $thumb; ?>" />
+
+                      <div class="image-partial-overlay">
+
+                        <div class="text-1">
+                          <h3><?php echo get_sub_field('tagline') ?></h3>
+                        </div>
+
+                        <div class="text-2">
+
+                          <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+                        </div>
+
+                      </div>
+
+                      <?php
+
+                    }
+                    elseif (get_sub_field('content_block_type') == 'title-only') {
+
+                      ?>
+
+                      <div class="title">
+
+                        <h1><?php echo get_sub_field('title') ?></h1>
+                        <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+
+                      </div>
+
+                      <?php
+                    }
+                    elseif (get_sub_field('content_block_type') == 'quote') {
+
+                      ?>
+
+                      <div class="quote">
+
+                        <h4><?php the_sub_field('full_text'); ?></h4>
+                        <h5>&mdash; <?php the_sub_field('citation'); ?></h5>
+
+                      </div>
+
+                      <?php
+
+                    }
+                    else {
+
+                    }
+
+                  ?>
+
+                </div>
 
               </div>
 
@@ -135,7 +184,8 @@ get_header(); ?>
 
       ?>
 
-    </div>
+
+
   </div>
 
 </main><!-- #main -->

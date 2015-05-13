@@ -53,12 +53,14 @@
 					<span>Site by <a href="http://meshfresh.com" target="_blank">MESH</a></span>
 				</div>
 			</div><!-- End of Footer -->
-		
+
 	</div>
 
 </footer>
 
 <?php wp_footer(); ?>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
 
 </body>
 </html>
