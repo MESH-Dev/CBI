@@ -1,0 +1,24 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+.callout {
+  text-align: center;
+  display: block;
+  width: 100%;
+
+  h1 {
+    color: white;  
+  }
+}
+
+.callout-button {
+  border: 2px solid white;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+
+  h3 {
+    line-height: 0em;
+  }
+}

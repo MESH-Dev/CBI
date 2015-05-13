@@ -1,0 +1,6 @@
+@if variable-exists(font-url--google-1) {
+  @import url($font-url--google-1);
+}
+@if variable-exists(font-url--google-2) {
+  @import url($font-url--google-2);
+}

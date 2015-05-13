@@ -1,0 +1,40 @@
+@include sticky-footer(50px, ".content-fullscreen", "#footer-fullscreen");
+
+.site-footer {
+  background-color: $grey;
+}
+
+.icons {
+  display: table;
+  margin: 10px 0;
+}
+
+.icon {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  padding-right: 40px;
+
+  img {
+    float: left;
+  }
+}
+
+.attribution span {
+  float: right;
+  color: black;
+  text-transform: uppercase;
+  padding: 30px 0;
+
+  a {
+    color: black;
+  }
+}
+.testimonial {
+  color: white;
+  background-color: $dark-grey;
+
+  h3 {
+    line-height: 0.5em;
+  }
+}
