@@ -51,8 +51,6 @@ get_header(); ?>
 
                   $project_terms = wp_get_object_terms($project->ID, 'type');
 
-
-
                   $filter_terms = '';
 
                   if ( ! empty( $project_terms ) ) {

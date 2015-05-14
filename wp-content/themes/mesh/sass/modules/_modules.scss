@@ -20,7 +20,11 @@
   color: white;
 
   h3 {
-    line-height: 0em;
+    margin: 5px;
+  }
+
+  &:hover {
+    background: rgba(255,255,255,0.3);
   }
 }
 

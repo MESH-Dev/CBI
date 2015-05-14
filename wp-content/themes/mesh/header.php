@@ -7,13 +7,41 @@
 <?php
 
 	if( is_page_template('templates/homepage-fullscreen.php') ) {
-		$imageArray = get_field('background_image');
-		$imageURL = $imageArray['sizes']['background-fullscreen'];
+
+		$ctr = 0;
+
+		if( have_rows('background_images') ):
+
+	    while ( have_rows('background_images') ) : the_row();
+
+				$ctr++;
+
+				$imageArray[$ctr] = get_sub_field('background_image')['sizes']['background-fullscreen'];
+
+	    endwhile;
+
+		endif;
+
+		$rand_pic = rand(1,$ctr);
+
 	}
+
+
+
+
+	while(has_sub_field('photographs'))
+	{
+		$ctr++;
+		$text_color[$ctr] = get_sub_field('text_color');
+        $imageArray  = get_sub_field('photograph');
+	    $imageAlt[$ctr]  = $imageArray['alt'];
+	    $imageURL[$ctr]  = $imageArray['sizes']['home-bg'];
+	}
+	$rand_pic = rand(1,$ctr);
 
 ?>
 
-<html <?php if( is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo $imageURL; ?>') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen" <?php } ?>>
+<html <?php if( is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo $imageArray[$rand_pic]; ?>') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen" <?php } ?>>
 
 <head>
 
@@ -43,6 +71,8 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri('/'); ?>/styles/jquery.sidr.dark.css">
 
 	<?php wp_head(); ?>
 
@@ -87,7 +117,13 @@
 									echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
 								} ?>
 					</nav>
+					<a class="menu-toggle" href="#sidr">
+
+						<i class="fa fa-bars fa-2x"></i>
+
+					</a>
 				</div>
 
 			</div>
+
 		</header>

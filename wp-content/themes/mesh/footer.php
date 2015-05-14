@@ -10,7 +10,7 @@
 				<h3>What our clients say</h3>
 			</div>
 		</div>
-		<hr/>
+		<hr class="white">
 		<div class="container">
 			<div class="twelve columns">
 
@@ -58,9 +58,44 @@
 
 </footer>
 
+<div id="sidr">
+	<nav>
+		<?php if(has_nav_menu('main_nav')){
+					$defaults = array(
+						'theme_location'  => 'main_nav',
+						'menu'            => 'main_nav',
+						'container'       => false,
+						'container_class' => '',
+						'container_id'    => '',
+						'menu_class'      => 'menu',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'depth'           => 0,
+						'walker'          => ''
+					); wp_nav_menu( $defaults );
+				}else{
+					echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
+				} ?>
+	</nav>
+</div>
+
+
 <?php wp_footer(); ?>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js"></script>
+<script src="<?php echo get_template_directory_uri('/'); ?>/js/jquery.sidr.js"></script>
+
+<script>
+	jQuery(document).ready(function() {
+	  jQuery('.menu-toggle').sidr();
+	});
+</script>
 
 </body>
 </html>
