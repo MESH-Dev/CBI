@@ -1,37 +1,9 @@
 <?php /*
-* Template Name: Landing - Grid
+* Template Name: Landing - Grid - No Filter
 */
 get_header(); ?>
 
 <main id="main" class="site-main" role="main">
-
-  <div class="container">
-
-      <div class="twelve columns">
-        <h1><?php the_title(); ?></h1>
-        <hr class="black">
-        <div class="types">
-          <?php
-
-            $terms = get_terms("type");
-
-            if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
-              echo '<ul>';
-
-              foreach ( $terms as $term ) {
-               echo '<li data-filter=".' . $term->slug . '">' . $term->name . '</li>';
-              }
-
-              echo '<li data-filter="*" class="is-checked">All</li>';
-              echo '</ul>';
-            }
-
-          ?>
-        </div>
-      </div>
-
-  </div>
-
 
 
   <div class="container" id="container">
