@@ -168,6 +168,8 @@ get_header(); ?>
 
   </div>
 
+  <br/>
+
 </main><!-- #main -->
 
 <?php get_footer(); ?>
