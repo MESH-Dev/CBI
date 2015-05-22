@@ -922,9 +922,10 @@ footer p {
 /* line 58, sass/modules/_modules.scss */
 .content-block {
   position: relative;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-/* line 62, sass/modules/_modules.scss */
+/* line 63, sass/modules/_modules.scss */
 .content-block .image-full-overlay {
   position: absolute;
   top: 25px;
@@ -933,20 +934,20 @@ footer p {
   bottom: 25px;
   background-color: rgba(255, 255, 255, 0.7);
 }
-/* line 70, sass/modules/_modules.scss */
+/* line 71, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-1 {
   position: relative;
   text-align: center;
   padding: 100px 0;
 }
-/* line 75, sass/modules/_modules.scss */
+/* line 76, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-2 {
   position: relative;
   text-align: center;
   padding: 100px 0;
   display: none;
 }
-/* line 83, sass/modules/_modules.scss */
+/* line 84, sass/modules/_modules.scss */
 .content-block .image-partial-overlay {
   position: absolute;
   left: 0;
@@ -955,49 +956,49 @@ footer p {
   background-color: rgba(255, 255, 255, 0.7);
   height: 50px;
 }
-/* line 91, sass/modules/_modules.scss */
+/* line 92, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 {
   position: relative;
   padding-left: 25px;
 }
-/* line 95, sass/modules/_modules.scss */
+/* line 96, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 h3 {
   line-height: 0;
 }
-/* line 99, sass/modules/_modules.scss */
+/* line 100, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 {
   position: relative;
   display: none;
   padding-left: 25px;
 }
-/* line 105, sass/modules/_modules.scss */
+/* line 106, sass/modules/_modules.scss */
 .content-block .image-partial-overlay:hover {
   height: 95px;
 }
-/* line 111, sass/modules/_modules.scss */
+/* line 112, sass/modules/_modules.scss */
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 115, sass/modules/_modules.scss */
+/* line 116, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
-/* line 120, sass/modules/_modules.scss */
+/* line 121, sass/modules/_modules.scss */
 .content-block .title h5 {
   margin: 0;
 }
-/* line 125, sass/modules/_modules.scss */
+/* line 126, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 129, sass/modules/_modules.scss */
+/* line 130, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
 }
-/* line 133, sass/modules/_modules.scss */
+/* line 134, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }

@@ -5,6 +5,16 @@ get_header(); ?>
 
 <main id="main" class="site-main" role="main">
 
+<div class="container">
+
+    <div class="twelve columns">
+      <h1><?php the_title(); ?></h1>
+      <hr class="black">
+    </div>
+
+</div>
+
+<br/>
 
   <div class="container" id="container">
 
