@@ -440,18 +440,19 @@ footer p {
   color: black;
   text-transform: uppercase;
   padding: 30px 0;
+  font-size: 12px;
 }
-/* line 30, sass/layout/_footer.scss */
+/* line 31, sass/layout/_footer.scss */
 .attribution span a {
   color: black;
 }
 
-/* line 34, sass/layout/_footer.scss */
+/* line 35, sass/layout/_footer.scss */
 .testimonial {
   color: white;
   background-color: #a4a4a4;
 }
-/* line 38, sass/layout/_footer.scss */
+/* line 39, sass/layout/_footer.scss */
 .testimonial h3 {
   line-height: 0.5em;
 }
@@ -957,50 +958,54 @@ footer p {
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.7);
   height: 50px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
-/* line 91, sass/modules/_modules.scss */
+/* line 96, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 {
   position: relative;
   padding-left: 25px;
 }
-/* line 95, sass/modules/_modules.scss */
+/* line 100, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 h3 {
   line-height: 0;
 }
-/* line 99, sass/modules/_modules.scss */
+/* line 104, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 {
   position: relative;
   display: none;
   padding-left: 25px;
 }
-/* line 105, sass/modules/_modules.scss */
+/* line 110, sass/modules/_modules.scss */
 .content-block .image-partial-overlay:hover {
   height: 95px;
 }
-/* line 111, sass/modules/_modules.scss */
+/* line 116, sass/modules/_modules.scss */
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 115, sass/modules/_modules.scss */
+/* line 120, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
-/* line 120, sass/modules/_modules.scss */
+/* line 125, sass/modules/_modules.scss */
 .content-block .title h5 {
   margin: 0;
 }
-/* line 125, sass/modules/_modules.scss */
+/* line 130, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 129, sass/modules/_modules.scss */
+/* line 134, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
 }
-/* line 133, sass/modules/_modules.scss */
+/* line 138, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }

@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
   });
 
   $(".image-partial-overlay").hover(function() {
-    $(".image-partial-overlay .text-2").toggle();
+    $(".image-partial-overlay .text-2").fadeToggle();
   });
 
   var grid = $('#container').isotope({
