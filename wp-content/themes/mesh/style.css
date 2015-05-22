@@ -1006,8 +1006,9 @@ footer p {
 /* line 136, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
+  text-indent: -0.5em;
 }
-/* line 140, sass/modules/_modules.scss */
+/* line 141, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }
