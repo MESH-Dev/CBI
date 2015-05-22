@@ -6,16 +6,16 @@ jQuery(document).ready(function($){
   //Let's do something awesome!
 
   $(".image-full-overlay").hover(function() {
-    $(".image-full-overlay .text-1").toggle();
-    $(".image-full-overlay .text-2").toggle();
+    $(this).find(".text-1").toggle();
+    $(this).find(".text-2").toggle();
   });
 
   $(".image-partial-overlay").hover(function() {
-    $(".image-partial-overlay .text-2").fadeToggle();
+    $(this).find(".text-2").fadeToggle();
   });
 
   $(".title").hover(function() {
-      $(".title h5").toggle();
+      $(this).find("h5").toggle();
   })
 
   var grid = $('#container').isotope({
