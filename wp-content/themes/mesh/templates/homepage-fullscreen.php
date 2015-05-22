@@ -11,9 +11,9 @@ get_header(); ?>
         <div class="twelve columns">
           <div class="callout">
             <h1><?php the_field("callout_headline"); ?></h1>
-            <a href="">
+            <a href="<?php echo get_permalink(get_field('call_to_action_link')->ID); ?>">
               <div class="callout-button">
-                <h3>Search or browse our properties <i class="fa fa-long-arrow-right"></i></h3>
+                <h3><?php the_field("callout_button_text"); ?> <i class="fa fa-long-arrow-right"></i></h3>
               </div>
             </a>
           </div>
