@@ -812,6 +812,10 @@ footer p {
   display: inline-block;
 }
 /* line 39, sass/modules/_menus.scss */
+.main-navigation > ul > li.current-menu-item {
+  border: 2px solid white;
+}
+/* line 43, sass/modules/_menus.scss */
 .main-navigation > ul ul {
   float: left;
   position: absolute;
@@ -821,27 +825,27 @@ footer p {
   width: 600px;
   padding-top: 20px;
 }
-/* line 48, sass/modules/_menus.scss */
+/* line 52, sass/modules/_menus.scss */
 .main-navigation > ul ul > li {
   display: inline;
   float: left;
   padding: 5px 20px 5px 20px;
   border-top: 3px solid white;
 }
-/* line 55, sass/modules/_menus.scss */
+/* line 59, sass/modules/_menus.scss */
 .main-navigation > ul ul > li:hover a {
   border-bottom: 2px solid white;
 }
-/* line 60, sass/modules/_menus.scss */
+/* line 64, sass/modules/_menus.scss */
 .main-navigation > ul ul > li:hover > ul, .main-navigation > ul ul > li.focus > ul {
   left: 100%;
 }
-/* line 79, sass/modules/_menus.scss */
+/* line 83, sass/modules/_menus.scss */
 .main-navigation > ul li:hover > ul,
 .main-navigation > ul li.focus > ul {
   left: 0;
 }
-/* line 84, sass/modules/_menus.scss */
+/* line 88, sass/modules/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
@@ -851,7 +855,7 @@ footer p {
 }
 
 /* Small menu. */
-/* line 99, sass/modules/_menus.scss */
+/* line 103, sass/modules/_menus.scss */
 .menu-toggle {
   display: none;
   float: right;
@@ -859,7 +863,7 @@ footer p {
   margin-top: 15px;
 }
 @media screen and (max-width: 960px) {
-  /* line 99, sass/modules/_menus.scss */
+  /* line 103, sass/modules/_menus.scss */
   .menu-toggle {
     display: block;
   }

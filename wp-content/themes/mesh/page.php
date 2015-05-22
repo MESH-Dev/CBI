@@ -6,12 +6,10 @@
 		<div class="row">
 			<div class="twelve columns">
 				<div class="container">
-			    <div class="row">
 			      <div class="twelve columns">
 			        <h1><?php the_title(); ?></h1>
 			        <hr class="black">
 			      </div>
-			    </div>
 			  </div>
 			</div>
 		</div>
