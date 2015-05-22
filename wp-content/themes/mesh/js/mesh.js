@@ -14,6 +14,10 @@ jQuery(document).ready(function($){
     $(".image-partial-overlay .text-2").fadeToggle();
   });
 
+  $(".title").hover(function() {
+      $(".title h5").toggle();
+  })
+
   var grid = $('#container').isotope({
     // options
     columnWidth: 200,

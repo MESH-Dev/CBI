@@ -986,26 +986,28 @@ footer p {
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
+  height: 140px;
 }
-/* line 120, sass/modules/_modules.scss */
+/* line 121, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
-/* line 125, sass/modules/_modules.scss */
+/* line 126, sass/modules/_modules.scss */
 .content-block .title h5 {
   margin: 0;
+  display: none;
 }
-/* line 130, sass/modules/_modules.scss */
+/* line 132, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 134, sass/modules/_modules.scss */
+/* line 136, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
 }
-/* line 138, sass/modules/_modules.scss */
+/* line 140, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }
