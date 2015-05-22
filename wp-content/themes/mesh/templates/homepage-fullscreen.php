@@ -8,7 +8,7 @@ get_header(); ?>
   <?php if (get_field("callout_headline")): ?>
     <div class="container">
       <div class="row">
-        <div class="twelve columns">
+        <div class="ten columns offset-by-one">
           <div class="callout">
             <h1><?php the_field("callout_headline"); ?></h1>
             <a href="<?php echo get_field('callout_button_link'); ?>">
