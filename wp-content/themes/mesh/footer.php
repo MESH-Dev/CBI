@@ -32,19 +32,19 @@
 			<div class="eight columns">
 				<div class="icons">
 					<div class="icon">
-						<img src="<?php echo get_template_directory_uri('/'); ?>/img/ccim.png" />
+						<a href="http://www.ccim.com/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/ccim.png" /></a>
 					</div>
 					<div class="icon">
-						<img src="<?php echo get_template_directory_uri('/'); ?>/img/grm.png" />
+						<a href="https://www.irem.org/credentials/for-individuals/cpm" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/grm.png" /></a>
 					</div>
 					<div class="icon">
-						<img src="<?php echo get_template_directory_uri('/'); ?>/img/aicp.png" />
+						<a href="https://www.planning.org/aicp/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/aicp.png" /></a>
 					</div>
 					<div class="icon">
-						<img src="<?php echo get_template_directory_uri('/'); ?>/img/micsc.png" />
+						<a href="http://www.icsc.org/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/micsc.png" /></a>
 					</div>
 					<div class="icon">
-						<img src="<?php echo get_template_directory_uri('/'); ?>/img/uli.png" />
+						<a href="http://uli.org/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/uli.png" /></a>
 					</div>
 				</div>
 			</div>
