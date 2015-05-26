@@ -32,7 +32,7 @@ body {
   margin: 0;
 }
 
-/* line 37, sass/base/_normalize.scss */
+/* line 26, sass/base/_normalize.scss */
 article,
 aside,
 details,
@@ -48,7 +48,7 @@ summary {
   display: block;
 }
 
-/* line 48, sass/base/_normalize.scss */
+/* line 45, sass/base/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -63,7 +63,7 @@ audio:not([controls]) {
   height: 0;
 }
 
-/* line 67, sass/base/_normalize.scss */
+/* line 66, sass/base/_normalize.scss */
 [hidden],
 template {
   display: none;
@@ -74,7 +74,7 @@ a {
   background: transparent;
 }
 
-/* line 83, sass/base/_normalize.scss */
+/* line 82, sass/base/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -85,7 +85,7 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 99, sass/base/_normalize.scss */
+/* line 98, sass/base/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -113,7 +113,7 @@ small {
   font-size: 80%;
 }
 
-/* line 138, sass/base/_normalize.scss */
+/* line 137, sass/base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -159,7 +159,7 @@ pre {
   overflow: auto;
 }
 
-/* line 198, sass/base/_normalize.scss */
+/* line 195, sass/base/_normalize.scss */
 code,
 kbd,
 pre,
@@ -168,7 +168,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 218, sass/base/_normalize.scss */
+/* line 214, sass/base/_normalize.scss */
 button,
 input,
 optgroup,
@@ -184,13 +184,13 @@ button {
   overflow: visible;
 }
 
-/* line 238, sass/base/_normalize.scss */
+/* line 237, sass/base/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 252, sass/base/_normalize.scss */
+/* line 249, sass/base/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -199,13 +199,13 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* line 261, sass/base/_normalize.scss */
+/* line 260, sass/base/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 269, sass/base/_normalize.scss */
+/* line 268, sass/base/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -217,7 +217,7 @@ input {
   line-height: normal;
 }
 
-/* line 290, sass/base/_normalize.scss */
+/* line 284, sass/base/_normalize.scss */
 *
 input[type="checkbox"],
 input[type="radio"] {
@@ -225,7 +225,7 @@ input[type="radio"] {
   padding: 0;
 }
 
-/* line 301, sass/base/_normalize.scss */
+/* line 300, sass/base/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -239,7 +239,7 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 323, sass/base/_normalize.scss */
+/* line 322, sass/base/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -274,7 +274,7 @@ table {
   border-spacing: 0;
 }
 
-/* line 370, sass/base/_normalize.scss */
+/* line 369, sass/base/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -371,7 +371,7 @@ img {
   height: auto;
 }
 
-/* line 93, sass/base/_base.scss */
+/* line 92, sass/base/_base.scss */
 ul,
 li {
   margin: 0;
@@ -379,7 +379,7 @@ li {
   list-style-type: none;
 }
 
-/* line 102, sass/base/_base.scss */
+/* line 101, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -389,7 +389,7 @@ textarea {
   border: 0;
 }
 
-/* line 111, sass/base/_base.scss */
+/* line 110, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
@@ -412,7 +412,7 @@ footer p {
 
 /* line 3, sass/layout/_footer.scss */
 .site-footer {
-  background-color: lightgrey;
+  background-color: #d3d3d3;
 }
 
 /* line 7, sass/layout/_footer.scss */
@@ -491,7 +491,7 @@ footer p {
   margin: 0 auto;
   padding: 0;
 }
-/* line 9, sass/grid/_grid.scss */
+/* line 8, sass/grid/_grid.scss */
 .container .column,
 .container .columns {
   float: left;
@@ -515,14 +515,14 @@ footer p {
 }
 
 /* Overrides */
-/* line 13, sass/grid/_dependencies.scss */
+/* line 12, sass/grid/_dependencies.scss */
 .container .column,
 .container .columns {
   margin-left: 1%;
   margin-right: 1%;
 }
 
-/* line 25, sass/grid/_dependencies.scss */
+/* line 24, sass/grid/_dependencies.scss */
 .container .one.column,
 .container .one.columns {
   width: 6.33333%;
@@ -663,7 +663,7 @@ footer p {
   .container {
     width: 100%;
   }
-  /* line 94, sass/grid/_dependencies.scss */
+  /* line 93, sass/grid/_dependencies.scss */
   .container .column,
   .container .columns {
     margin-left: 2%;
@@ -703,7 +703,7 @@ footer p {
   .container {
     width: 100%;
   }
-  /* line 94, sass/grid/_dependencies.scss */
+  /* line 93, sass/grid/_dependencies.scss */
   .container .column,
   .container .columns {
     margin-left: 2%;
@@ -837,11 +837,11 @@ footer p {
 .main-navigation > ul ul > li:hover a {
   border-bottom: 2px solid white;
 }
-/* line 64, sass/modules/_menus.scss */
+/* line 63, sass/modules/_menus.scss */
 .main-navigation > ul ul > li:hover > ul, .main-navigation > ul ul > li.focus > ul {
   left: 100%;
 }
-/* line 83, sass/modules/_menus.scss */
+/* line 82, sass/modules/_menus.scss */
 .main-navigation > ul li:hover > ul,
 .main-navigation > ul li.focus > ul {
   left: 0;

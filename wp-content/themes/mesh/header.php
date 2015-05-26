@@ -84,7 +84,7 @@
 
 		<header <?php if( !is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo get_template_directory_uri('/'); ?>/img/header.png'); background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen" <?php } ?>>
 			<div class="container">
-				<div class="twelve columns">
+				<div class="six columns">
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri('/'); ?>/img/logo.png" /></a>
 					</div>

@@ -61,6 +61,8 @@ get_header(); ?>
                   	}
                   }
 
+                } else {
+                  $filter_terms = '';
                 }
 
               ?>
