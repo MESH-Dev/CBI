@@ -144,7 +144,8 @@ get_header(); ?>
                       <div class="title">
 
                         <h1><?php echo get_sub_field('title') ?></h1>
-                        <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+                        <h5 class="hide">Hide</h5>
+                        <h5 class="unhide"><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
 
                       </div>
 
@@ -158,6 +159,29 @@ get_header(); ?>
 
                         <h4>&ldquo;<?php the_sub_field('full_text'); ?>&rdquo;</h4>
                         <h5>&mdash; <?php the_sub_field('citation'); ?></h5>
+
+                      </div>
+
+                      <?php
+
+                    }
+                    elseif (get_sub_field('content_block_type') == 'v-card') {
+
+                      ?>
+
+                      <div class="v-card">
+
+                        <div class="contact-info">
+
+                          <span class="email"><?php echo get_sub_field('email'); ?></span><br/>
+                          <span class="phone"><?php echo get_sub_field('phone'); ?></span><br/>
+                          <span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span>
+                        </div>
+
+                        <div class="download">
+                          <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
+                          <h5>Download V Card</h5>
+                        </div>
 
                       </div>
 

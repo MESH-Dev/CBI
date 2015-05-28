@@ -138,6 +138,29 @@
 		                      <?php
 
 		                    }
+												elseif (get_sub_field('content_block_type') == 'v-card') {
+
+		                      ?>
+
+		                      <div class="v-card">
+
+		                        <div class="contact-info">
+
+		                          <span class="email"><?php echo get_sub_field('email'); ?></span><br/>
+		                          <span class="phone"><?php echo get_sub_field('phone'); ?></span><br/>
+		                          <span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span>
+		                        </div>
+
+		                        <div class="download">
+		                          <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
+		                          <h5>Download V Card</h5>
+		                        </div>
+
+		                      </div>
+
+		                      <?php
+
+		                    }
 		                    else {
 
 		                    }

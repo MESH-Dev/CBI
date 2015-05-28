@@ -67,6 +67,7 @@
     right: 25px;
     bottom: 25px;
     background-color:rgba(255,255,255,0.7);
+    overflow: hidden;
 
     .text-1 {
       position: relative;
@@ -117,16 +118,22 @@
   .title {
     border: 3px solid black;
     padding: 25px;
-    height: 140px;
+
 
     h1 {
       margin: 0;
       font-weight: 700;
     }
 
-    h5 {
+    h5.unhide {
       margin: 0;
       display: none;
+    }
+
+    h5.hide {
+      margin: 0;
+      opacity: 0;
+      display: block;
     }
   }
 
@@ -142,6 +149,34 @@
     h5 {
       margin: 0;
     }
+  }
+
+  .v-card {
+    border: 3px solid black;
+    padding: 25px;
+    float: left;
+
+    .contact-info {
+      margin-bottom: 10px;
+      font-family: $font-family--secondary;
+
+      .email {
+        color: $red;
+        font-weight: 700;
+      }
+    }
+
+    .download {
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+      h5 {
+        margin: 0;
+        float: left;
+      }
+    }
+
   }
 
 }

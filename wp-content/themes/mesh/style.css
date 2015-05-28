@@ -938,19 +938,20 @@ footer p {
   right: 25px;
   bottom: 25px;
   background-color: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
 }
-/* line 71, sass/modules/_modules.scss */
+/* line 72, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-1 {
   position: relative;
   text-align: center;
 }
-/* line 76, sass/modules/_modules.scss */
+/* line 77, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-2 {
   position: relative;
   text-align: center;
   display: none;
 }
-/* line 83, sass/modules/_modules.scss */
+/* line 84, sass/modules/_modules.scss */
 .content-block .image-partial-overlay {
   position: absolute;
   left: 0;
@@ -964,54 +965,85 @@ footer p {
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
-/* line 97, sass/modules/_modules.scss */
+/* line 98, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 {
   position: relative;
   padding-left: 25px;
 }
-/* line 101, sass/modules/_modules.scss */
+/* line 102, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 h3 {
   line-height: 0;
 }
-/* line 105, sass/modules/_modules.scss */
+/* line 106, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 {
   position: relative;
   display: none;
   padding-left: 25px;
 }
-/* line 111, sass/modules/_modules.scss */
+/* line 112, sass/modules/_modules.scss */
 .content-block .image-partial-overlay:hover {
   height: 95px;
 }
-/* line 117, sass/modules/_modules.scss */
+/* line 118, sass/modules/_modules.scss */
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
-  height: 140px;
 }
-/* line 122, sass/modules/_modules.scss */
+/* line 123, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
-/* line 127, sass/modules/_modules.scss */
-.content-block .title h5 {
+/* line 128, sass/modules/_modules.scss */
+.content-block .title h5.unhide {
   margin: 0;
   display: none;
 }
 /* line 133, sass/modules/_modules.scss */
+.content-block .title h5.hide {
+  margin: 0;
+  opacity: 0;
+  display: block;
+}
+/* line 140, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 137, sass/modules/_modules.scss */
+/* line 144, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
   text-indent: -0.5em;
 }
-/* line 142, sass/modules/_modules.scss */
+/* line 149, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
+}
+/* line 154, sass/modules/_modules.scss */
+.content-block .v-card {
+  border: 3px solid black;
+  padding: 25px;
+  float: left;
+}
+/* line 159, sass/modules/_modules.scss */
+.content-block .v-card .contact-info {
+  margin-bottom: 10px;
+  font-family: "Vollkorn", Helvetica, Arial, sans-serif;
+}
+/* line 163, sass/modules/_modules.scss */
+.content-block .v-card .contact-info .email {
+  color: #d40000;
+  font-weight: 700;
+}
+/* line 170, sass/modules/_modules.scss */
+.content-block .v-card .download img {
+  float: left;
+  margin-right: 10px;
+}
+/* line 174, sass/modules/_modules.scss */
+.content-block .v-card .download h5 {
+  margin: 0;
+  float: left;
 }
 
 /* line 41, sass/_shame.scss */

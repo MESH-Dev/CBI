@@ -15,7 +15,8 @@ jQuery(document).ready(function($){
   });
 
   $(".title").hover(function() {
-      $(this).find("h5").toggle();
+      $(this).find(".unhide").toggle();
+      $(this).find(".hide").toggle();
   })
 
 
