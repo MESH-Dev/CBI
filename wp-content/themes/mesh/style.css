@@ -299,7 +299,7 @@ h1 {
   font-size: 2.8125em;
   font-family: "Karla", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2em;
   color: black;
 }
@@ -945,18 +945,36 @@ footer p {
 .content-block .image-full-overlay h1 {
   margin: 10px 0;
 }
-/* line 77, sass/modules/_modules.scss */
+@media screen and (max-width: 1025px) {
+  /* line 73, sass/modules/_modules.scss */
+  .content-block .image-full-overlay h1 {
+    font-size: 2.25em;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 73, sass/modules/_modules.scss */
+  .content-block .image-full-overlay h1 {
+    font-size: 2.8125em;
+  }
+}
+@media screen and (max-width: 1025px) {
+  /* line 85, sass/modules/_modules.scss */
+  .content-block .image-full-overlay h3 {
+    font-size: 1.0625em;
+  }
+}
+/* line 91, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-1 {
   position: relative;
   text-align: center;
 }
-/* line 82, sass/modules/_modules.scss */
+/* line 96, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-2 {
   position: relative;
   text-align: center;
   display: none;
 }
-/* line 89, sass/modules/_modules.scss */
+/* line 103, sass/modules/_modules.scss */
 .content-block .image-partial-overlay {
   position: absolute;
   left: 0;
@@ -970,82 +988,82 @@ footer p {
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
-/* line 103, sass/modules/_modules.scss */
+/* line 117, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 {
   position: relative;
   padding-left: 25px;
 }
-/* line 107, sass/modules/_modules.scss */
+/* line 121, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 h3 {
   line-height: 0;
 }
-/* line 111, sass/modules/_modules.scss */
+/* line 125, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 {
   position: relative;
   display: none;
   padding-left: 25px;
 }
-/* line 117, sass/modules/_modules.scss */
+/* line 131, sass/modules/_modules.scss */
 .content-block .image-partial-overlay:hover {
   height: 95px;
 }
-/* line 123, sass/modules/_modules.scss */
+/* line 137, sass/modules/_modules.scss */
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 128, sass/modules/_modules.scss */
+/* line 142, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
-/* line 133, sass/modules/_modules.scss */
+/* line 147, sass/modules/_modules.scss */
 .content-block .title h5.unhide {
   margin: 0;
   display: none;
 }
-/* line 138, sass/modules/_modules.scss */
+/* line 152, sass/modules/_modules.scss */
 .content-block .title h5.hide {
   margin: 0;
   opacity: 0;
   display: block;
 }
-/* line 145, sass/modules/_modules.scss */
+/* line 159, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 149, sass/modules/_modules.scss */
+/* line 163, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
   text-indent: -0.5em;
 }
-/* line 154, sass/modules/_modules.scss */
+/* line 168, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }
-/* line 159, sass/modules/_modules.scss */
+/* line 173, sass/modules/_modules.scss */
 .content-block .v-card {
   border: 3px solid black;
   padding: 25px;
   float: left;
 }
-/* line 164, sass/modules/_modules.scss */
+/* line 178, sass/modules/_modules.scss */
 .content-block .v-card .contact-info {
   margin-bottom: 10px;
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
 }
-/* line 168, sass/modules/_modules.scss */
+/* line 182, sass/modules/_modules.scss */
 .content-block .v-card .contact-info .email {
   color: #d40000;
   font-weight: 700;
 }
-/* line 175, sass/modules/_modules.scss */
+/* line 189, sass/modules/_modules.scss */
 .content-block .v-card .download img {
   float: left;
   margin-right: 10px;
 }
-/* line 179, sass/modules/_modules.scss */
+/* line 193, sass/modules/_modules.scss */
 .content-block .v-card .download h5 {
   margin: 0;
   float: left;

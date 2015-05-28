@@ -72,6 +72,20 @@
 
     h1 {
       margin: 10px 0;
+
+      @media screen and (max-width: 1025px) {
+        font-size: em(36);
+      }
+      @media screen and (max-width: 768px) {
+        font-size: em(45);
+      }
+
+    }
+
+    h3 {
+      @media screen and (max-width: 1025px) {
+        font-size: em(17);
+      }
     }
 
     .text-1 {
