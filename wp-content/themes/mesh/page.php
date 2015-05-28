@@ -151,10 +151,12 @@
 		                          <span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span>
 		                        </div>
 
+														<?php if (get_sub_field('link')) { ?>
 		                        <div class="download">
 		                          <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
 		                          <h5><a href="<?php echo get_sub_field('link'); ?>">Download V Card</a></h5>
 		                        </div>
+														<?php } ?>
 
 		                      </div>
 
