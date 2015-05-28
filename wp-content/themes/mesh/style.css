@@ -955,60 +955,61 @@ footer p {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 5px;
   background-color: rgba(255, 255, 255, 0.7);
   height: 50px;
+  overflow: hidden;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
-/* line 96, sass/modules/_modules.scss */
+/* line 97, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 {
   position: relative;
   padding-left: 25px;
 }
-/* line 100, sass/modules/_modules.scss */
+/* line 101, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 h3 {
   line-height: 0;
 }
-/* line 104, sass/modules/_modules.scss */
+/* line 105, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 {
   position: relative;
   display: none;
   padding-left: 25px;
 }
-/* line 110, sass/modules/_modules.scss */
+/* line 111, sass/modules/_modules.scss */
 .content-block .image-partial-overlay:hover {
   height: 95px;
 }
-/* line 116, sass/modules/_modules.scss */
+/* line 117, sass/modules/_modules.scss */
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
   height: 140px;
 }
-/* line 121, sass/modules/_modules.scss */
+/* line 122, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
-/* line 126, sass/modules/_modules.scss */
+/* line 127, sass/modules/_modules.scss */
 .content-block .title h5 {
   margin: 0;
   display: none;
 }
-/* line 132, sass/modules/_modules.scss */
+/* line 133, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 136, sass/modules/_modules.scss */
+/* line 137, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
   text-indent: -0.5em;
 }
-/* line 141, sass/modules/_modules.scss */
+/* line 142, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }
