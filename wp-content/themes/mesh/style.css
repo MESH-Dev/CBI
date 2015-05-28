@@ -939,19 +939,24 @@ footer p {
   bottom: 25px;
   background-color: rgba(255, 255, 255, 0.7);
   overflow: hidden;
+  padding: 10px;
 }
-/* line 72, sass/modules/_modules.scss */
+/* line 73, sass/modules/_modules.scss */
+.content-block .image-full-overlay h1 {
+  margin: 10px 0;
+}
+/* line 77, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-1 {
   position: relative;
   text-align: center;
 }
-/* line 77, sass/modules/_modules.scss */
+/* line 82, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-2 {
   position: relative;
   text-align: center;
   display: none;
 }
-/* line 84, sass/modules/_modules.scss */
+/* line 89, sass/modules/_modules.scss */
 .content-block .image-partial-overlay {
   position: absolute;
   left: 0;
@@ -965,82 +970,82 @@ footer p {
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
-/* line 98, sass/modules/_modules.scss */
+/* line 103, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 {
   position: relative;
   padding-left: 25px;
 }
-/* line 102, sass/modules/_modules.scss */
+/* line 107, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-1 h3 {
   line-height: 0;
 }
-/* line 106, sass/modules/_modules.scss */
+/* line 111, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 {
   position: relative;
   display: none;
   padding-left: 25px;
 }
-/* line 112, sass/modules/_modules.scss */
+/* line 117, sass/modules/_modules.scss */
 .content-block .image-partial-overlay:hover {
   height: 95px;
 }
-/* line 118, sass/modules/_modules.scss */
+/* line 123, sass/modules/_modules.scss */
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 123, sass/modules/_modules.scss */
+/* line 128, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
-/* line 128, sass/modules/_modules.scss */
+/* line 133, sass/modules/_modules.scss */
 .content-block .title h5.unhide {
   margin: 0;
   display: none;
 }
-/* line 133, sass/modules/_modules.scss */
+/* line 138, sass/modules/_modules.scss */
 .content-block .title h5.hide {
   margin: 0;
   opacity: 0;
   display: block;
 }
-/* line 140, sass/modules/_modules.scss */
+/* line 145, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 144, sass/modules/_modules.scss */
+/* line 149, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
   text-indent: -0.5em;
 }
-/* line 149, sass/modules/_modules.scss */
+/* line 154, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }
-/* line 154, sass/modules/_modules.scss */
+/* line 159, sass/modules/_modules.scss */
 .content-block .v-card {
   border: 3px solid black;
   padding: 25px;
   float: left;
 }
-/* line 159, sass/modules/_modules.scss */
+/* line 164, sass/modules/_modules.scss */
 .content-block .v-card .contact-info {
   margin-bottom: 10px;
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
 }
-/* line 163, sass/modules/_modules.scss */
+/* line 168, sass/modules/_modules.scss */
 .content-block .v-card .contact-info .email {
   color: #d40000;
   font-weight: 700;
 }
-/* line 170, sass/modules/_modules.scss */
+/* line 175, sass/modules/_modules.scss */
 .content-block .v-card .download img {
   float: left;
   margin-right: 10px;
 }
-/* line 174, sass/modules/_modules.scss */
+/* line 179, sass/modules/_modules.scss */
 .content-block .v-card .download h5 {
   margin: 0;
   float: left;
