@@ -99,6 +99,10 @@
       text-align: center;
       display: none;
       padding-top: 30%;
+
+      @media screen and (max-width: 1025px) {
+        padding-top: 0;
+      }
     }
   }
 
