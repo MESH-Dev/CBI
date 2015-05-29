@@ -40,6 +40,20 @@
 			border: 2px solid white;
 		}
 
+		li.current-menu-parent {
+			border: 2px solid white;
+
+			ul {
+				left: 0;
+
+				li.current-menu-item a {
+
+					border-bottom: 2px solid white;
+				}
+			}
+
+		}
+
 		ul {
 			float: left;
 			position: absolute;
