@@ -118,8 +118,9 @@
 		                      <div class="title">
 
 		                        <h1><?php echo get_sub_field('title') ?></h1>
+														<?php if(get_sub_field('call_to_action_link')) { ?>
 		                        <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
-
+														<?php } ?>
 		                      </div>
 
 		                      <?php
