@@ -106,7 +106,7 @@
     right: 0;
     bottom: 5px;
     background-color:rgba(255,255,255,0.7);
-    height: 50px;
+    height: 40px;
     overflow: hidden;
 
     -webkit-transition: all .5s ease-in-out;
@@ -119,17 +119,22 @@
       padding-left: 25px;
 
       h3 {
-        line-height: 0;
+        margin: 10px 0 5px;
+        line-height: 1em;
       }
     }
     .text-2 {
       position: relative;
       display: none;
       padding-left: 25px;
+
+      h5 {
+        margin: 0;
+      }
     }
 
     &:hover {
-      height: 95px;
+      height: 65px;
     }
 
   }
