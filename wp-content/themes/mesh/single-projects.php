@@ -3,21 +3,19 @@
 <main id="content">
 
 	<div class="container">
-		<div class="row">
-			<div class="twelve columns">
-				<div class="container">
-			    <div class="row">
-			      <div class="twelve columns">
-			        <h1><?php the_title(); ?></h1>
-			        <hr class="black">
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		</div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <h1><?php the_title(); ?></h1>
+        <hr class="black">
+      </div>
+    </div>
+
 		<div class="row">
 			<div class="three columns">
-				<?php get_sidebar(); ?>
+
+				
+
 			</div>
 			<div class="nine columns">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

@@ -46,23 +46,21 @@ get_header(); ?>
 
               <?php
 
-                if (get_sub_field('call_to_action_link')) {
-                  $project = get_sub_field('call_to_action_link');
+              $filter_terms = '';
 
-                  $project_terms = wp_get_object_terms($project->ID, 'type');
+                if (get_sub_field('tags')) {
+                  $tags = get_sub_field('tags');
 
-                  $filter_terms = '';
-
-                  if ( ! empty( $project_terms ) ) {
-                  	if ( ! is_wp_error( $project_terms ) ) {
-                			foreach( $project_terms as $term ) {
-                			     $filter_terms .= " " . $term->slug;
+                  if ( ! empty( $tags ) ) {
+                  	if ( ! is_wp_error( $tags ) ) {
+                			foreach( $tags as $tag ) {
+                			     $filter_terms .= " " . $tag;
                 			}
                   	}
                   }
 
                 } else {
-                  $filter_terms = '';
+                  $tags = '';
                 }
 
               ?>
