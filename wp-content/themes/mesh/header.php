@@ -41,7 +41,7 @@
 
 ?>
 
-<html <?php if( is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo $imageArray[$rand_pic]; ?>') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen" <?php } ?>>
+<html>
 
 <head>
 
@@ -80,7 +80,7 @@
 
 <body <?php body_class(); ?>>
 
-	<div id="page" class='hfeed site <?php if( is_page_template('templates/homepage-fullscreen.php') && is_front_page() ) { echo "content-fullscreen"; } ?>'>
+	<div id="page" class='hfeed site <?php if( is_page_template('templates/homepage-fullscreen.php') && is_front_page() ) { echo "content-fullscreen"; } ?>' <?php if( is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo $imageArray[$rand_pic]; ?>') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen" <?php } ?>>
 
 		<header <?php if( !is_page_template('templates/homepage-fullscreen.php') ) { ?> style="background: url('<?php echo get_template_directory_uri('/'); ?>/img/header.png'); background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;" class="background-fullscreen" <?php } ?>>
 			<div class="container">

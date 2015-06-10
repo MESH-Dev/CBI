@@ -59,6 +59,9 @@
 </footer>
 
 <div id="sidr">
+	<div id="close-icon">
+		<i class="fa fa-times"></i>
+	</div>
 	<nav>
 		<?php if(has_nav_menu('main_nav')){
 					$defaults = array(

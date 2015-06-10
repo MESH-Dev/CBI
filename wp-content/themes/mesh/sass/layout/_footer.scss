@@ -20,6 +20,10 @@
   img {
     float: left;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .attribution span {
@@ -40,4 +44,12 @@
   h3 {
     line-height: 0.5em;
   }
+}
+
+#close-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: black;
+  cursor: pointer;
 }

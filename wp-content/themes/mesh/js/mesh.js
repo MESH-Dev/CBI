@@ -48,4 +48,8 @@ jQuery(document).ready(function($){
   });
 
 
+  $('#close-icon').click(function() {
+    $.sidr('close');
+  });
+
 });
