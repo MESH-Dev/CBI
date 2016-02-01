@@ -49,7 +49,7 @@ get_header(); ?>
 
               <div class="four columns item <?php echo $filter_terms; ?>">
 
-                <div class="content-block">
+
 
                   <?php
 
@@ -61,7 +61,9 @@ get_header(); ?>
 
                       ?>
 
-                      <img src="<?php echo $thumb; ?>" />
+                      <div class="content-block">
+                        <img src="<?php echo $thumb; ?>" />
+                      </div>
 
                       <?php
 
@@ -73,21 +75,23 @@ get_header(); ?>
 
                       ?>
 
-                      <img src="<?php echo $thumb; ?>" />
+                      <div class="content-block content-block-overlay" style="background-image: url(<?php echo $thumb; ?>)">
 
-                      <div class="image-full-overlay">
+                        <div class="image-full-overlay">
 
-                        <div class="text-1">
-                          <h1><?php echo get_sub_field('title'); ?></h1>
-                          <h3><?php echo get_sub_field('tagline') ?></h3>
-                        </div>
+                          <div class="text-1">
+                            <h1><?php echo get_sub_field('title'); ?></h1>
+                            <h3><?php echo get_sub_field('tagline') ?></h3>
+                          </div>
 
-                        <div class="text-2">
-                          <h3><?php echo get_sub_field('full_text'); ?></h3>
+                          <div class="text-2 hidden">
+                            <h3><?php echo get_sub_field('full_text'); ?></h3>
 
-                          <?php if (get_sub_field('call_to_action_link')) { ?>
-                          <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
-                          <?php } ?>
+                            <?php if (get_sub_field('call_to_action_link')) { ?>
+                            <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+                            <?php } ?>
+                          </div>
+
                         </div>
 
                       </div>
@@ -102,17 +106,19 @@ get_header(); ?>
 
                       ?>
 
-                      <img src="<?php echo $thumb; ?>" />
+                      <div class="content-block content-block-overlay" style="background-image: url(<?php echo $thumb; ?>)">
 
-                      <div class="image-partial-overlay">
+                        <div class="image-partial-overlay">
 
-                        <div class="text-1">
-                          <h3><?php echo get_sub_field('tagline') ?></h3>
-                        </div>
+                          <div class="text-1">
+                            <h3><?php echo get_sub_field('tagline') ?></h3>
+                          </div>
 
-                        <div class="text-2">
+                          <div class="text-2 hidden">
 
-                          <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+                            <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+                          </div>
+
                         </div>
 
                       </div>
@@ -124,10 +130,13 @@ get_header(); ?>
 
                       ?>
 
-                      <div class="title">
+                      <div class="content-block">
+                        <div class="title">
 
-                        <h1><?php echo get_sub_field('title') ?></h1>
-                        <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+                          <h1><?php echo get_sub_field('title') ?></h1>
+                          <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
+
+                        </div>
 
                       </div>
 
@@ -137,11 +146,13 @@ get_header(); ?>
 
                       ?>
 
-                      <div class="quote">
+                      <div class="content-block">
+                        <div class="quote">
 
-                        <h4>&ldquo;<?php the_sub_field('full_text'); ?>&rdquo;</h4>
-                        <h5>&mdash; <?php the_sub_field('citation'); ?></h5>
+                          <h4>&ldquo;<?php the_sub_field('full_text'); ?>&rdquo;</h4>
+                          <h5>&mdash; <?php the_sub_field('citation'); ?></h5>
 
+                        </div>
                       </div>
 
                       <?php
@@ -151,20 +162,22 @@ get_header(); ?>
 
                       ?>
 
-                      <div class="v-card">
+                      <div class="content-block">
+                        <div class="v-card">
 
-                        <div class="contact-info">
+                          <div class="contact-info">
 
-                          <span class="email"><?php echo get_sub_field('email'); ?></span><br/>
-                          <span class="phone"><?php echo get_sub_field('phone'); ?></span><br/>
-                          <span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span>
+                            <span class="email"><?php echo get_sub_field('email'); ?></span><br/>
+                            <span class="phone"><?php echo get_sub_field('phone'); ?></span><br/>
+                            <span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span>
+                          </div>
+
+                          <div class="download">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
+                            <h5><a href="<?php echo get_sub_field('link'); ?>">Download V Card</a></h5>
+                          </div>
+
                         </div>
-
-                        <div class="download">
-                          <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
-                          <h5><a href="<?php echo get_sub_field('link'); ?>">Download V Card</a></h5>
-                        </div>
-
                       </div>
 
                       <?php
@@ -176,7 +189,7 @@ get_header(); ?>
 
                   ?>
 
-                </div>
+
 
               </div>
 

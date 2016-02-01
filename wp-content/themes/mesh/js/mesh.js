@@ -6,12 +6,12 @@ jQuery(document).ready(function($){
   //Let's do something awesome!
 
   $(".image-full-overlay").hover(function() {
-    $(this).find(".text-1").toggle();
-    $(this).find(".text-2").toggle();
+    $(this).find(".text-1").toggleClass('hidden');
+    $(this).find(".text-2").toggleClass('hidden');
   });
 
   $(".image-partial-overlay").hover(function() {
-    $(this).find(".text-2").fadeToggle();
+    $(this).find(".text-2").fadeToggleClass('hidden');
   });
 
   $(".title").hover(function() {
