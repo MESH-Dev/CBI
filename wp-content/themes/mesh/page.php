@@ -146,19 +146,20 @@
 
 		                      <div class="v-card">
 
-		                        <div class="contact-info">
+														<?php if (get_sub_field('email') or get_sub_field('phone') or get_sub_field('additional_info')) { ?>
+	                            <div class="contact-info">
+	                              <?php if (get_sub_field('email')) { ?><span class="email"><?php echo get_sub_field('email'); ?></span><br/><?php } ?>
+	                              <?php if (get_sub_field('phone')) { ?><span class="phone"><?php echo get_sub_field('phone'); ?></span><br/><?php } ?>
+	                              <?php if (get_sub_field('additional_info')) { ?><span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span><?php } ?>
+	                            </div>
+	                          <?php } ?>
 
-		                          <span class="email"><?php echo get_sub_field('email'); ?></span><br/>
-		                          <span class="phone"><?php echo get_sub_field('phone'); ?></span><br/>
-		                          <span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span>
-		                        </div>
-
-														<?php if (get_sub_field('link')) { ?>
-		                        <div class="download">
-		                          <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
-		                          <h5><a href="<?php echo get_sub_field('link'); ?>">Download V Card</a></h5>
-		                        </div>
-														<?php } ?>
+	                          <?php if (get_sub_field('link')) { ?>
+	                            <div class="download">
+	                              <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
+	                              <h5><a href="<?php echo get_sub_field('link'); ?>">Download V Card</a></h5>
+	                            </div>
+	                          <?php } ?>
 
 		                      </div>
 

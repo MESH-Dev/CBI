@@ -1045,99 +1045,98 @@ footer p {
 /* line 144, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 {
   position: relative;
-  display: none;
   padding-left: 25px;
 }
-/* line 149, sass/modules/_modules.scss */
+/* line 148, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 a:hover {
   opacity: 0.7;
 }
-/* line 153, sass/modules/_modules.scss */
+/* line 152, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 h5 {
   margin: 0;
 }
-/* line 158, sass/modules/_modules.scss */
+/* line 157, sass/modules/_modules.scss */
 .content-block .image-partial-overlay:hover {
   height: 95px;
 }
-/* line 164, sass/modules/_modules.scss */
+/* line 163, sass/modules/_modules.scss */
 .content-block .title {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 168, sass/modules/_modules.scss */
+/* line 167, sass/modules/_modules.scss */
 .content-block .title a:hover {
   opacity: 0.7;
 }
-/* line 172, sass/modules/_modules.scss */
+/* line 171, sass/modules/_modules.scss */
 .content-block .title h1 {
   margin: 0;
   font-weight: 700;
 }
 @media screen and (max-width: 1025px) {
-  /* line 172, sass/modules/_modules.scss */
+  /* line 171, sass/modules/_modules.scss */
   .content-block .title h1 {
     font-size: 2.0625em;
   }
 }
-/* line 182, sass/modules/_modules.scss */
+/* line 181, sass/modules/_modules.scss */
 .content-block .title h5.unhide {
   margin: 0;
   display: none;
 }
-/* line 187, sass/modules/_modules.scss */
+/* line 186, sass/modules/_modules.scss */
 .content-block .title h5.hide {
   margin: 0;
   opacity: 0;
   display: block;
 }
-/* line 194, sass/modules/_modules.scss */
+/* line 193, sass/modules/_modules.scss */
 .content-block .quote {
   border: 3px solid black;
   padding: 25px;
 }
-/* line 198, sass/modules/_modules.scss */
+/* line 197, sass/modules/_modules.scss */
 .content-block .quote h4 {
   margin: 0 0 10px 0;
   text-indent: -0.5em;
 }
-/* line 203, sass/modules/_modules.scss */
+/* line 202, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }
-/* line 208, sass/modules/_modules.scss */
+/* line 207, sass/modules/_modules.scss */
 .content-block .v-card {
   border: 3px solid black;
   padding: 25px;
   float: left;
 }
-/* line 213, sass/modules/_modules.scss */
+/* line 212, sass/modules/_modules.scss */
 .content-block .v-card .contact-info {
   margin-bottom: 10px;
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
 }
-/* line 217, sass/modules/_modules.scss */
+/* line 216, sass/modules/_modules.scss */
 .content-block .v-card .contact-info .email {
   color: #d40000;
   font-weight: 700;
 }
-/* line 224, sass/modules/_modules.scss */
+/* line 223, sass/modules/_modules.scss */
 .content-block .v-card .download img {
   float: left;
   margin-right: 10px;
 }
-/* line 228, sass/modules/_modules.scss */
+/* line 227, sass/modules/_modules.scss */
 .content-block .v-card .download h5 {
   margin: 0;
   float: left;
 }
 
-/* line 238, sass/modules/_modules.scss */
+/* line 237, sass/modules/_modules.scss */
 #page {
   height: 100%;
 }
 
-/* line 242, sass/modules/_modules.scss */
+/* line 241, sass/modules/_modules.scss */
 .hidden {
   display: none !important;
 }

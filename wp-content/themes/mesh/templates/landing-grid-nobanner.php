@@ -124,7 +124,7 @@ get_header(); ?>
                             <h3><?php echo get_sub_field('tagline') ?></h3>
                           </div>
 
-                          <div class="text-2 hidden">
+                          <div class="text-2">
 
                             <h5><a href="<?php echo get_permalink(get_sub_field('call_to_action_link')->ID); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a></h5>
                           </div>
@@ -174,17 +174,20 @@ get_header(); ?>
                       <div class="content-block">
                         <div class="v-card">
 
-                          <div class="contact-info">
+                          <?php if (get_sub_field('email') or get_sub_field('phone') or get_sub_field('additional_info')) { ?>
+                            <div class="contact-info">
+                              <?php if (get_sub_field('email')) { ?><span class="email"><?php echo get_sub_field('email'); ?></span><br/><?php } ?>
+                              <?php if (get_sub_field('phone')) { ?><span class="phone"><?php echo get_sub_field('phone'); ?></span><br/><?php } ?>
+                              <?php if (get_sub_field('additional_info')) { ?><span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span><?php } ?>
+                            </div>
+                          <?php } ?>
 
-                            <span class="email"><?php echo get_sub_field('email'); ?></span><br/>
-                            <span class="phone"><?php echo get_sub_field('phone'); ?></span><br/>
-                            <span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span>
-                          </div>
-
-                          <div class="download">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
-                            <h5><a href="<?php echo get_sub_field('link'); ?>">Download V Card</a></h5>
-                          </div>
+                          <?php if (get_sub_field('link')) { ?>
+                            <div class="download">
+                              <img src="<?php echo get_template_directory_uri(); ?>/img/vcard.png" />
+                              <h5><a href="<?php echo get_sub_field('link'); ?>">Download V Card</a></h5>
+                            </div>
+                          <?php } ?>
 
                         </div>
                       </div>

@@ -10,9 +10,9 @@ jQuery(document).ready(function($){
     $(this).find(".text-2").toggleClass('hidden');
   });
 
-  $(".image-partial-overlay").hover(function() {
-    $(this).find(".text-2").fadeToggleClass('hidden');
-  });
+  // $(".image-partial-overlay").hover(function() {
+  //   $(this).find(".text-2").toggleClass('hidden');
+  // });
 
   $(".title").hover(function() {
       $(this).find(".unhide").toggle();
