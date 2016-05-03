@@ -1114,38 +1114,39 @@ footer p {
   border: 3px solid black;
   padding: 25px;
   float: left;
+  width: 100%;
 }
-/* line 214, sass/modules/_modules.scss */
+/* line 215, sass/modules/_modules.scss */
 .content-block .v-card .contact-info {
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
 }
-/* line 218, sass/modules/_modules.scss */
+/* line 219, sass/modules/_modules.scss */
 .content-block .v-card .contact-info .email {
   color: #d40000;
   font-weight: 700;
 }
-/* line 225, sass/modules/_modules.scss */
+/* line 226, sass/modules/_modules.scss */
 .content-block .v-card .download img {
   float: left;
   margin-right: 10px;
 }
-/* line 229, sass/modules/_modules.scss */
+/* line 230, sass/modules/_modules.scss */
 .content-block .v-card .download h5 {
   margin: 0;
   float: left;
 }
 
-/* line 239, sass/modules/_modules.scss */
+/* line 240, sass/modules/_modules.scss */
 #page {
   height: 100%;
 }
 
-/* line 243, sass/modules/_modules.scss */
+/* line 244, sass/modules/_modules.scss */
 .hidden {
   display: none !important;
 }
 
-/* line 248, sass/modules/_modules.scss */
+/* line 249, sass/modules/_modules.scss */
 .additional-info p {
   margin: 0;
 }
