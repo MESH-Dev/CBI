@@ -148,7 +148,7 @@
 
 														<?php if (get_sub_field('email') or get_sub_field('phone') or get_sub_field('additional_info')) { ?>
 	                            <div class="contact-info">
-	                              <?php if (get_sub_field('email')) { ?><span class="email"><?php echo get_sub_field('email'); ?></span><br/><?php } ?>
+	                              <?php if (get_sub_field('email')) { ?><a href="mailto:<?php echo get_sub_field("email"); ?>"><span class="email"><?php echo get_sub_field('email'); ?></span></a><br/><?php } ?>
 	                              <?php if (get_sub_field('phone')) { ?><span class="phone"><?php echo get_sub_field('phone'); ?></span><br/><?php } ?>
 	                              <?php if (get_sub_field('additional_info')) { ?><span class="additional-info"><?php echo get_sub_field('additional_info'); ?></span><?php } ?>
 	                            </div>
@@ -166,9 +166,28 @@
 		                      <?php
 
 		                    }
-		                    else {
+												elseif (get_sub_field('content_block_type') == 'link') {
+
+		                      ?>
+
+		                      <div class="title">
+
+	                          <?php if (get_sub_field('external_link')) { ?>
+	                            <a href="<?php echo get_sub_field('external_link'); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a>
+	                          <?php } ?>
+
+		                      </div>
+
+		                      <?php
 
 		                    }
+		                    else {
+
+
+
+		                    }
+
+
 
 		                  ?>
 

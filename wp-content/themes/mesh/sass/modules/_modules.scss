@@ -65,6 +65,8 @@
   position: relative;
   margin-top: 10px;
   margin-bottom: 10px;
+  float: left;
+  width: 100%;
 
   .image-full-overlay {
     position: relative;
@@ -210,7 +212,7 @@
     float: left;
 
     .contact-info {
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
       font-family: $font-family--secondary;
 
       .email {
@@ -240,4 +242,10 @@
 
 .hidden {
   display: none !important;
+}
+
+.additional-info{
+  p {
+    margin: 0;
+  }
 }

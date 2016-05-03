@@ -167,6 +167,21 @@
 		                      <?php
 
 		                    }
+												elseif (get_sub_field('content_block_type') == 'link') {
+
+		                      ?>
+
+		                      <div class="title">
+
+	                          <?php if (get_sub_field('external_link')) { ?>
+	                            <a href="<?php echo get_sub_field('external_link'); ?>"><?php echo get_sub_field('call_to_action'); ?> <i class="fa fa-long-arrow-right"></i></a>
+	                          <?php } ?>
+
+		                      </div>
+
+		                      <?php
+
+		                    }
 		                    else {
 
 		                    }
@@ -183,12 +198,14 @@
 
 		            // no rows found
 
+								$no_rows = true;
+
 		        endif;
 
 		      ?>
 
 			</div>
-			<div class="nine columns">
+			<div class="nine columns <?php if ($no_rows) { ?> offset-by-three <?php } ?>">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 					<?php the_content(); ?>

@@ -7,7 +7,7 @@
 .icons {
   display: table;
   margin: 10px 0;
-  width: 350px;
+  width: 250px;
 }
 
 .icon {
@@ -16,9 +16,11 @@
   vertical-align: middle;
   padding-right: 4%;
   padding-left: 2%;
+  width: 40px;
 
   img {
     float: left;
+    width: 100%;
   }
 
   &:hover {
