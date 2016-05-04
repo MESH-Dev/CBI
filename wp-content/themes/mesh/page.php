@@ -132,7 +132,7 @@
 
 		                      <div class="quote">
 
-		                        <h4>&ldquo;<?php the_sub_field('full_text'); ?>&rdquo;</h4>
+		                        <p>&ldquo;<?php the_sub_field('full_text'); ?>&rdquo;</p>
 		                        <h5>&mdash; <?php the_sub_field('citation'); ?></h5>
 
 		                      </div>

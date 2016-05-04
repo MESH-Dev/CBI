@@ -1106,47 +1106,52 @@ footer p {
   text-indent: -0.5em;
 }
 /* line 204, sass/modules/_modules.scss */
+.content-block .quote p {
+  margin: 0 0 10px 0;
+  text-indent: -0.5em;
+}
+/* line 209, sass/modules/_modules.scss */
 .content-block .quote h5 {
   margin: 0;
 }
-/* line 209, sass/modules/_modules.scss */
+/* line 214, sass/modules/_modules.scss */
 .content-block .v-card {
   border: 3px solid black;
   padding: 25px;
   float: left;
   width: 100%;
 }
-/* line 215, sass/modules/_modules.scss */
+/* line 220, sass/modules/_modules.scss */
 .content-block .v-card .contact-info {
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
 }
-/* line 219, sass/modules/_modules.scss */
+/* line 224, sass/modules/_modules.scss */
 .content-block .v-card .contact-info .email {
   color: #d40000;
   font-weight: 700;
 }
-/* line 226, sass/modules/_modules.scss */
+/* line 231, sass/modules/_modules.scss */
 .content-block .v-card .download img {
   float: left;
   margin-right: 10px;
 }
-/* line 230, sass/modules/_modules.scss */
+/* line 235, sass/modules/_modules.scss */
 .content-block .v-card .download h5 {
   margin: 0;
   float: left;
 }
 
-/* line 240, sass/modules/_modules.scss */
+/* line 245, sass/modules/_modules.scss */
 #page {
   height: 100%;
 }
 
-/* line 244, sass/modules/_modules.scss */
+/* line 249, sass/modules/_modules.scss */
 .hidden {
   display: none !important;
 }
 
-/* line 249, sass/modules/_modules.scss */
+/* line 254, sass/modules/_modules.scss */
 .additional-info p {
   margin: 0;
 }
