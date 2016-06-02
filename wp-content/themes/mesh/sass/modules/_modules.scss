@@ -88,8 +88,8 @@
     }
 
     h3 {
-      @media screen and (max-width: 1025px) {
-        font-size: em(17);
+      @media screen and (max-width: 1300px) {
+        font-size: em(15);
       }
     }
 
@@ -111,7 +111,7 @@
       padding: 10px;
 
       a:hover {
-        opacity: 0.7;
+        opacity: 0.5;
       }
 
       @media screen and (max-width: 1025px) {
@@ -124,7 +124,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 5px;
+    bottom: 0px;
     background-color:rgba(255,255,255,0.7);
     height: 40px;
     overflow: hidden;
@@ -148,7 +148,7 @@
       padding-left: 25px;
 
       a:hover {
-        opacity: 0.7;
+        opacity: 0.5;
       }
 
       h5 {
@@ -248,8 +248,8 @@
 }
 
 #page {
-  height: 100%;
-  margin: 0 auto -80px;
+  min-height: 100%;
+  margin: 0 auto 15px;
 }
 
 .hidden {

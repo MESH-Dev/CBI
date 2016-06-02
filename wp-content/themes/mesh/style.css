@@ -425,7 +425,7 @@ footer p {
 /* line 7, sass/layout/_footer.scss */
 .icons {
   display: table;
-  margin: 10px 0;
+  margin: 15px 0;
   width: 250px;
 }
 
@@ -434,8 +434,8 @@ footer p {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  padding-right: 4%;
-  padding-left: 2%;
+  padding-right: 6%;
+  padding-left: 5%;
   width: 40px;
 }
 /* line 21, sass/layout/_footer.scss */
@@ -469,11 +469,6 @@ footer p {
 /* line 46, sass/layout/_footer.scss */
 .testimonial h3 {
   line-height: 0.5em;
-}
-
-/* line 51, sass/layout/_footer.scss */
-.logos {
-  height: 80px;
 }
 
 /* line 55, sass/layout/_footer.scss */
@@ -901,13 +896,23 @@ footer p {
   display: none;
   float: right;
   color: white;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 @media screen and (max-width: 960px) {
   /* line 117, sass/modules/_menus.scss */
   .menu-toggle {
     display: block;
   }
+}
+
+/* line 131, sass/modules/_menus.scss */
+.current-menu-item.menu-item-29 .sub-menu {
+  left: 0;
+}
+
+/* line 137, sass/modules/_menus.scss */
+.sidr ul li a:hover {
+  opacity: 0.5;
 }
 
 /* line 5, sass/modules/_modules.scss */
@@ -999,10 +1004,10 @@ footer p {
     font-size: 2.0625em;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1300px) {
   /* line 90, sass/modules/_modules.scss */
   .content-block .image-full-overlay h3 {
-    font-size: 1.0625em;
+    font-size: 0.9375em;
   }
 }
 /* line 96, sass/modules/_modules.scss */
@@ -1026,7 +1031,7 @@ footer p {
 }
 /* line 113, sass/modules/_modules.scss */
 .content-block .image-full-overlay .text-2 a:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 @media screen and (max-width: 1025px) {
   /* line 104, sass/modules/_modules.scss */
@@ -1039,7 +1044,7 @@ footer p {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 5px;
+  bottom: 0px;
   background-color: rgba(255, 255, 255, 0.7);
   height: 40px;
   overflow: hidden;
@@ -1065,7 +1070,7 @@ footer p {
 }
 /* line 150, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 a:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 /* line 154, sass/modules/_modules.scss */
 .content-block .image-partial-overlay .text-2 h5 {
@@ -1160,8 +1165,8 @@ footer p {
 
 /* line 250, sass/modules/_modules.scss */
 #page {
-  height: 100%;
-  margin: 0 auto -80px;
+  min-height: 100%;
+  margin: 0 auto 15px;
 }
 
 /* line 255, sass/modules/_modules.scss */

@@ -118,11 +118,23 @@
 	display: none;
 	float: right;
 	color: white;
-	margin-top: 15px;
+	margin-top: 5px;
 
 
 	@include mq($desktop-width, 'max-width') {
 		display: block;
 	}
 
+}
+
+.current-menu-item.menu-item-29 {
+	.sub-menu {
+		left: 0;
+	}
+}
+
+.sidr ul li a {
+	&:hover {
+		opacity: 0.5;
+	}
 }
