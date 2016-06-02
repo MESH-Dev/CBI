@@ -287,14 +287,20 @@ th {
 }
 
 /* line 10, sass/base/_base.scss */
+html {
+  height: 100%;
+}
+
+/* line 14, sass/base/_base.scss */
 body {
   color: black;
   font-size: 16;
   font-family: "Karla", Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  height: 100%;
 }
 
-/* line 20, sass/base/_base.scss */
+/* line 25, sass/base/_base.scss */
 h1 {
   font-size: 2.8125em;
   font-family: "Karla", Helvetica, Arial, sans-serif;
@@ -304,7 +310,7 @@ h1 {
   color: black;
 }
 
-/* line 29, sass/base/_base.scss */
+/* line 34, sass/base/_base.scss */
 h2 {
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
   font-size: 2.0625em;
@@ -312,7 +318,7 @@ h2 {
   margin-top: 0;
 }
 
-/* line 36, sass/base/_base.scss */
+/* line 41, sass/base/_base.scss */
 h3 {
   font-family: "Karla", Helvetica, Arial, sans-serif;
   font-size: 1.25em;
@@ -320,14 +326,14 @@ h3 {
   font-weight: 700;
 }
 
-/* line 43, sass/base/_base.scss */
+/* line 48, sass/base/_base.scss */
 h4 {
   font-size: 1.5em;
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
 
-/* line 49, sass/base/_base.scss */
+/* line 54, sass/base/_base.scss */
 h5 {
   font-family: "Karla", Helvetica, Arial, sans-serif;
   font-size: 0.9375em;
@@ -335,44 +341,44 @@ h5 {
   text-transform: uppercase;
 }
 
-/* line 56, sass/base/_base.scss */
+/* line 61, sass/base/_base.scss */
 a {
   color: #d40000;
   text-decoration: none;
   font-weight: 700;
 }
 
-/* line 62, sass/base/_base.scss */
+/* line 67, sass/base/_base.scss */
 p {
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
   font-size: 0.9375em;
 }
 
-/* line 67, sass/base/_base.scss */
+/* line 72, sass/base/_base.scss */
 blockquote {
   font-family: "Vollkorn", Helvetica, Arial, sans-serif;
   margin: 10px 0 20px;
   font-weight: 400;
 }
-/* line 72, sass/base/_base.scss */
+/* line 77, sass/base/_base.scss */
 blockquote footer {
   font-family: "Karla", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 77, sass/base/_base.scss */
+/* line 82, sass/base/_base.scss */
 blockquote footer cite {
   font-style: normal;
 }
 
-/* line 85, sass/base/_base.scss */
+/* line 90, sass/base/_base.scss */
 img {
   margin-bottom: 1.5pxem;
   max-width: 100%;
   height: auto;
 }
 
-/* line 93, sass/base/_base.scss */
+/* line 98, sass/base/_base.scss */
 ul,
 li {
   margin: 0;
@@ -380,7 +386,7 @@ li {
   list-style-type: none;
 }
 
-/* line 102, sass/base/_base.scss */
+/* line 107, sass/base/_base.scss */
 input,
 textarea {
   display: block;
@@ -390,22 +396,22 @@ textarea {
   border: 0;
 }
 
-/* line 111, sass/base/_base.scss */
+/* line 116, sass/base/_base.scss */
 input:focus,
 textarea:focus {
   transition: 1;
 }
 
-/* line 118, sass/base/_base.scss */
+/* line 123, sass/base/_base.scss */
 button {
   outline: 0;
 }
 
-/* line 124, sass/base/_base.scss */
+/* line 129, sass/base/_base.scss */
 footer {
   border-top: 1px solid palette(grey, xx-light);
 }
-/* line 126, sass/base/_base.scss */
+/* line 131, sass/base/_base.scss */
 footer p {
   font-size: 1pxem;
   margin-top: 1.375em;
@@ -466,6 +472,11 @@ footer p {
 }
 
 /* line 51, sass/layout/_footer.scss */
+.logos {
+  height: 80px;
+}
+
+/* line 55, sass/layout/_footer.scss */
 #close-icon {
   position: absolute;
   right: 20px;
@@ -1142,16 +1153,23 @@ footer p {
 }
 
 /* line 245, sass/modules/_modules.scss */
-#page {
+.content-fullscreen {
   height: 100%;
+  margin: 0 auto -250px;
 }
 
-/* line 249, sass/modules/_modules.scss */
+/* line 250, sass/modules/_modules.scss */
+#page {
+  height: 100%;
+  margin: 0 auto -80px;
+}
+
+/* line 255, sass/modules/_modules.scss */
 .hidden {
   display: none !important;
 }
 
-/* line 254, sass/modules/_modules.scss */
+/* line 260, sass/modules/_modules.scss */
 .additional-info p {
   margin: 0;
 }

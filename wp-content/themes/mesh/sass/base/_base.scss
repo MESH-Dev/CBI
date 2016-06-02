@@ -7,11 +7,16 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	color: black;
   font-size: $base__font-size;
   font-family: $font-family--primary;
   line-height: ($base__line-height/$base__font-size);
+	height: 100%;
 }
 
 

@@ -242,8 +242,14 @@
 
 }
 
+.content-fullscreen {
+  height: 100%;
+  margin: 0 auto -250px;
+}
+
 #page {
   height: 100%;
+  margin: 0 auto -80px;
 }
 
 .hidden {

@@ -27,27 +27,29 @@
 
 	<?php } ?>
 
-	<div class="container">
+	<div class="logos">
+		<div class="container">
 
-			<div class="four columns">
-				<div class="icons">
-					<div class="icon">
-						<a href="http://www.ccim.com/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/ccim.png" /></a>
-					</div>
-					<div class="icon">
-						<a href="https://www.planning.org/aicp/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/aicp.png" /></a>
-					</div>
-					<div class="icon">
-						<a href="http://www.icsc.org/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/micsc.png" /></a>
+				<div class="four columns">
+					<div class="icons">
+						<div class="icon">
+							<a href="http://www.ccim.com/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/ccim.png" /></a>
+						</div>
+						<div class="icon">
+							<a href="https://www.planning.org/aicp/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/aicp.png" /></a>
+						</div>
+						<div class="icon">
+							<a href="http://www.icsc.org/" target="_blank"><img src="<?php echo get_template_directory_uri('/'); ?>/img/micsc.png" /></a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="eight columns">
-				<div class="attribution">
-					<span>Site by <a href="http://meshfresh.com" target="_blank">MESH</a></span>
-				</div>
-			</div><!-- End of Footer -->
+				<div class="eight columns">
+					<div class="attribution">
+						<span>Site by <a href="http://meshfresh.com" target="_blank">MESH</a></span>
+					</div>
+				</div><!-- End of Footer -->
 
+		</div>
 	</div>
 
 </footer>
